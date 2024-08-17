@@ -1,0 +1,41 @@
+.header {
+  align-items: center;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 20px 10%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 40px;
+  position: relative;
+}
+
+.navbar a::before {
+  background: #fff;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  transition: 0.3s;
+  width: 0;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
